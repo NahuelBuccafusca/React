@@ -6,37 +6,55 @@ import {
     MenuItem, Flex, Box, Spacer,
 } from '@chakra-ui/react'
 import CartWidget from './CartWidget'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <div>
-            <Flex>
-                <Box p='4' bg='blue'>
+
+        <Flex>
+            <Box p='4' bg='blue'>
+                <Link to={'/'}>
                     <h1>NBindumentaria</h1>
-                </Box>
-                <Spacer />
-                <Box p='4' bg='green.400'>
-                    <Menu>
-                        <MenuButton>
-                            Categories
-                        </MenuButton>
-                        <MenuList>
-                            <MenuItem>Category a</MenuItem>
-                            <MenuItem>Category b</MenuItem>
-                            <MenuItem>Category c</MenuItem>
-                            <MenuItem>Category d</MenuItem>
-                            <MenuItem>Category e</MenuItem>
-                        </MenuList>
-                    </Menu>
+                </Link>
+            </Box>
+            <Spacer />
+            <Box p='4' bg='green.400'>
+                <Menu>
+                    <MenuButton>
+                        Categorias
+                    </MenuButton>
+                    <MenuList>
+                        <MenuItem>
+                            <Link to={`/categoria/${'Remeras'}`}>
+                                Remeras
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                        <Link to={`/categoria/${'Pantalones'}`}>
+                            Pantalones
+                        </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to={`/categoria/${"Calzado"}`}>
+                                Calzado
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to={`/categoria/${'Accesorios'}`}>
+                                Accesorios
+                            </Link>
+                        </MenuItem>
+                    </MenuList>
+                </Menu>
 
-                </Box>
-                <Spacer/>
-                <Box>
+            </Box>
+            <Spacer />
+            <Box>
+                <Link to={'/Cart'}>
                     <CartWidget />
-                </Box>
-            </Flex>
-
-        </div>
+                </Link>
+            </Box>
+        </Flex>
     )
 }
 

@@ -9,10 +9,11 @@ h1 {
     flex-direction: row;
     margin: 20px;
     border: solid black;
+    
 }
 
 .contador {
-    margin: 100px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -22,7 +23,27 @@ h1 {
         border: solid black;
         border-radius: 5px;
         background-color: red;
-        width: 150px;
+        width: 100px;
     }
 
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.detalle{
+    display: flex;
+    justify-content: center;
 }
