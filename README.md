@@ -7,4 +7,4 @@ La aplicacion cuenta con diferentes funcionalidades como el filtrado por categor
 Durante el desarrollo del e commerce se utilizaron diferentes bibliotecas como **"Chakra UI"**, para mejorar la accesibilidad y **"Sweet Alert"** por ejemplo en las alertas hacia los usuarios y distintas extensiones como **"ReacTree"**.
 En cuanto al diseño y los estilos de la aplicación se utilizó el lenguaje **"CSS"**.
 ___
-[Demostracion del funcionamiento de la pagina](./src/assets/NB-indumentaria-demo.gif)ce
+[Demostracion del funcionamiento de la pagina](./src/assets/NB-indumentaria-demo.gif)
