@@ -1,4 +1,4 @@
-#**NB Indumentaria**
+**NB Indumentaria**
 ___
 ##Bienvenidos a mi proyecto!
 ___ 
