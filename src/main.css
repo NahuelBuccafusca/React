@@ -1,15 +1,27 @@
 h1 {
     font-size: large;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
+h2 {
+    background-color: rgb(93, 162, 240);
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px;
 
-.carrito {
+
+}
+
+h3 {
+    margin: 5px;
+}
+
+.widget {
     display: flex;
     flex-direction: row;
     margin: 20px;
     border: solid black;
-    
+
 }
 
 .contador {
@@ -17,33 +29,121 @@ h1 {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: space-evenly;
-    
-    & button{
+
+
+    & button {
+        margin: 5px;
         border: solid black;
         border-radius: 5px;
-        background-color: red;
-        width: 100px;
+        background-color: rgb(93, 162, 240);
+        width: 150px;
+        font-weight: bold;
+
     }
 
 }
 
-.tarjetas{
+.tarjetas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-   
+
 }
 
-.card{
+
+
+.detalle {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+
+    & h2,
+    h3 {
+        width: 600px;
+        font-weight: bold;
+        margin: 50px;
+        background-color: rgba(240, 248, 255, 0.705);
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & input {
+        height: 50px;
+        background-color: rgba(127, 255, 212, 0.781);
+        width: 300px;
+
+    }
+
+
+}
+
+.finalizar {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
+    & a {
+        margin: 5px;
+        border: solid;
+        border-radius: 5px;
+        background-color: rgb(93, 162, 240);
+    }
+
 }
 
-.detalle{
+.carrito {
+    margin: 10px;
+    margin-top: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    & button {
+        margin: 20px;
+    }
+
+    & h3 {
+        margin: 20px;
+        background-color: rgba(240, 248, 255, 0.705);
+    }
+}
+
+.vacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h2 {
+        width: 100vw;
+    }
+
+    & button {
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+.root {
+    font-weight: bold;
+    background-image: url(./assets/fondo3.jpg);
+    background-size: cover;
+
 }

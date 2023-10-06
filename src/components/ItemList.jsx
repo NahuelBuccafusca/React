@@ -4,11 +4,11 @@ import Item from './Item'
 const ItemList = ({ productos }) => {
 
   return (
-    <div className='tarjetas'>
+    <div className='tarjetas' key={productos.id}>
       {
         productos.map((p) => {
 
-          return(
+          return (
 
             <Item producto={p} key={p.id} />
           )
